@@ -22,7 +22,7 @@ git_pull_command = (
     f"git pull && "
     f"git checkout {branch} && "
     f"cd ~/{repo} && "
-    f"pip install -r app/requirements.txt"
+    f"pip install -r requirements.txt"
     "\n"
 )
 # Send command to console
