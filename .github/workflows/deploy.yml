@@ -55,6 +55,7 @@ jobs:
           PA_API_TOKEN: ${{ secrets.PA_API_TOKEN }}
           PA_USERNAME: ${{ secrets.PA_USERNAME }}
           REPO_NAME: ${{ github.repository }}
+          BRANCH_NAME: ${{ github.ref_name }}
         run: |
           pip install requests
           python deploy.py
