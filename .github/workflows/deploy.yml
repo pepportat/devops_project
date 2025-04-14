@@ -13,7 +13,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.actor == github.repository_owner && startsWith(github.ref,'refs/heads/release/')
+    if: github.actor == github.repository_owner
 
     steps:
       - name: Checkout code
